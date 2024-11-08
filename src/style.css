@@ -1,0 +1,47 @@
+.feedContainer::-webkit-scrollbar{
+    display: none;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.rum{
+    animation:32s slide infinite linear;
+}
+.sticky-element {
+    position: sticky;
+    top: 0; /* Adjust this value for when the element should "stick" */
+    background-color: yellow;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .content {
+    height: 1000px; /* Just for demonstration */
+    background-color: lightgray;
+  }
+  .demo{
+    -webkit-text-stroke: 1px plum;
+    color: transparent;
+  }
+ .demo::before{
+    content: 'Welcome...Users';
+    position: absolute;
+    width:0%;
+    height:8%;
+    overflow: hidden;
+    color: darkmagenta;
+    /* border-right: 8px solid darkmagenta; */
+    transition: 3s ease-in;
+ }
+ .root:hover{
+    .demo::before{
+        width:50%;
+        filter: drop-shadow(0 0 25px darkmagenta);
+     }
+ }
+ 
