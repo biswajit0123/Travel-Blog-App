@@ -13,12 +13,17 @@ function LandingPage() {
   ];
   return (
     <>
+
+    {/* background fixed image */}
       <img
         src="src/Images/4jpekc5x.bmp"
         alt=""
         className=" fixed w-full h-full"
       />
+
       <div className=" feedContainer  w-full m-0 p-0 overflow-hidden relative z-10">
+
+        {/* header logo/Navbar logo */}
         <header className="w-full h-16 bg-purple-100 flex items-center justify-between fixed z-40">
           <h2 className=" font-extrabold text-2xl">Lets_Explore</h2>
           <nav className="  gap-5 font-bold text-lg flex list-none">
@@ -37,7 +42,11 @@ function LandingPage() {
             {/* <li className=' bg-green-300'>{< Signup/>}</li> */}
           </nav>
         </header>
+
+          {/* front design */}
         <div className="mt-16 flex flex-col bg-slate-200 h-[46rem] lg:h-[51rem]">
+
+          {/* big headings */}
           <section className=" grid grid-rows-3 grid-flow-col gap-2 sm:gap-3 md:gap-4">
             <div className=" sm:w-[27rem] md:w-[35rem] h-11 text-md md:text-xl lg:text-2xl sm:h-14 md:h-14 my-auto w-[19rem] bg-pink-300 mx-auto rounded-3xl flex justify-center items-center font-serif mt-4 ">
               <span>Explore Things and Make Memories</span>
@@ -47,15 +56,22 @@ function LandingPage() {
             </div>
             <div className="block m-auto">heyy</div>
           </section>
+          
+          {/* get started button */}
           <div className=" flex justify-center ">
             <button className=" bg-black text-lg sm:text-xl text-slate-300 font-extrabold p-4 rounded-3xl">
               Get Started
             </button>
           </div>
+
+          {/* sliding page */}
           <div className=" mt-9 max-h-min md:h-[412px] ">
             <SlidingPage />
           </div>
+
         </div>
+
+        {/* Privacy Policy */}
         <div className="flex justify-center items-center flex-col gap-7 md:gap-10 w-full h-[35rem] md:h-[22rem] bg-yellow-500">
         <div className=" flex flex-row gap-12 md:gap-20 ">
             <div><img src="src/Logos/16033372.png" alt="" className=" w-10 h-10 transition ease-linear duration-100 hover:scale-125"/></div>
@@ -70,6 +86,7 @@ function LandingPage() {
           </div>
         </div>
 
+        {/* Contact  with us */}
         <div className=" flex justify-center items-center flex-col gap-7 md:gap-10 mt-5 w-full h-[35rem] md:h-[28rem] bg-transparent text-white">
           <div className="">
             <img
@@ -94,58 +111,96 @@ function LandingPage() {
             Book Now
           </button>
         </div>
-        <footer className=" w-full h-[30rem] md:h-[21rem] bg-stone-500 flex justify-center bg-opacity-95">
-          <div className=" grid grid-cols-2 md:grid-cols-4 md:gap-24 ">
-            <div className=" flex  flex-col gap-3 min-w-full min-h-[100vh]">
-              <h1 className=" mx-auto mt-2 text-xl font-serif font-bold">
-                Latest Article
-              </h1>
-              <div className=" font-mono font-semibold text-slate-200">
-                <span>How to get used to higher altitudes</span>
-                <br />
-                <span>
-                  finding perfect spots finding perfect spots where you don’t
-                  need a{" "}
-                </span>
-                <br />
-                <span>Lorem ipsum dolor sit amet</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <h1 className=" mx-auto mt-2 text-xl font-serif  font-bold">
-                News_Later
-              </h1>
-              <span className=" leading-9 mt-2 mx-auto font-mono font-semibold text-slate-200">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, animi impedit accusamus voluptatem rem dolor repellendus
-                vitae laboriosam debitis facere?
-              </span>
-            </div>
-            <div className=" -mt-[28rem] md:-mt-0 flex flex-col ">
-              <h1 className="mx-auto mt-10 md:mt-2 text-xl font-serif  font-bold">
-                Links
-              </h1>
-              <ul className=" flex flex-col leading-9 mx-auto font-mono font-semibold text-slate-200">
-                <NavLink>Destination</NavLink>
-                <NavLink>Experience</NavLink>
-                <NavLink>Blog</NavLink>
-                <NavLink>Contact</NavLink>
-              </ul>
-            </div>
-            <div className=" -mt-[28rem] md:-mt-0 flex flex-col ">
-              <h1 className=" mx-auto mt-10 md:mt-2 text-xl font-serif  font-bold">
-                Ratings
-              </h1>
-              <ul className=" flex flex-col leading-9 mx-auto font-mono font-semibold text-slate-200">
-                <NavLink>Destination</NavLink>
-                <NavLink>Experience</NavLink>
-                <NavLink>Blog</NavLink>
-                <NavLink>Contact</NavLink>
-              </ul>
-              <span></span>
-            </div>
-          </div>
-        </footer>
+
+        {/* footer */}
+
+        <footer className="bg-gray-900 text-gray-200 font-serif">
+
+        {/* <!-- container --> */}
+        <div class="container mx-auto py-6 px-6 "> 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 ">
+{/* col 1 */}
+  <div className="p-2">
+    
+      <img className="h-10 w-1/2 sm:w-44" src="tvlogo.png" alt="tv logo" />
+    
+    <h2 className="my-4 text-2xl font-bold">Latest Blog Article</h2>
+    <div className="my-5">
+      <a className="text-lg font-medium my-1" href="/">Finding Perfect Spots</a> <br />
+      <a className="text-lg font-medium" href="/">Where You Don’t Need A</a><br />
+      <a className="text-lg font-medium" href="/">Fortune To Get There</a>
+      <hr className="my-5 w-1/2" />
+      <a className="font-mono text-base font-medium" href="">Let’s Travel Together.....</a>
+    </div>
+  </div>
+
+
+
+{/* col 2 */}
+<div className="p-2">
+  <hr className="w-full sm:w-0" />
+  <h2 className="my-4 text-2xl font-bold">Newsletter</h2>
+  <p className="text-lg font-medium my-6">
+    Be among the first ones to find <br />
+    out about our awesome <br />
+    adventure
+  </p>
+
+  <div className="flex items-center p-2 gap-1 bg-gray-500 rounded-3xl overflow-hidden absolute w-72 h-14">
+    <input type="email" placeholder="Email address.." className="bg-transparent outline-none w-1/2" />
+    <button className="bg-slate-300 hover:bg-yellow-200 text-black outline-none  w-56 h-14 relative rounded-3xl left-7">Subscribe</button>
+  </div>
+
+  {/* Social links */}
+  <div className="mt-5 flex space-x-4 items-center">
+    <a href=""><i className="fa-brands fa-facebook text-3xl"></i></a>
+    <a href=""><i className="fa-brands fa-linkedin text-3xl"></i></a>
+    <a href=""><i className="fa-brands fa-square-twitter text-3xl"></i></a>
+    <a href=""><i className="fa-brands fa-github text-3xl"></i></a>
+    <a href=""><i className="fa-brands fa-instagram text-3xl"></i></a>
+  </div>
+</div>
+
+
+{/* col 3 */}
+<div className="p-2">
+  <hr className="w-full sm:w-0" />
+
+  <h2 className="my-4 text-2xl font-bold">Travel Dojo</h2>
+
+  <p className="text-lg">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et qui sit ratione necessitatibus molestiae sint? Quos id, mollitia ratione voluptatibus <em>example text</em>.
+  </p>
+  <br />
+  <p className="text-lg">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore obca
+  </p>
+</div>
+
+{/* col 4  */}
+<div className="p-2">
+  <hr className="w-full sm:w-0" />
+
+  <h2 className="my-4 text-2xl font-bold">Links</h2>
+  
+  <div className="flex flex-col space-y-1 text-lg">
+    <a href="">Destinations</a> 
+    <a href="">Experience</a> 
+    <a href="">About Us</a> 
+    <a href="">Blog</a> 
+    <a href="">Contact</a>  
+  </div>
+</div>
+
+</div>
+</div>
+         
+<h4 className="py-4 text-center text-lg ">Cpoyright ! Made by Biswajit | Commando @2024 ! All rigts Reserved 🖕</h4>
+</footer>
+
+
+
+        {/* end */}
       </div>
     </>
   );
