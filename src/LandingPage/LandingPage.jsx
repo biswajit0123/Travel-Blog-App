@@ -59,7 +59,7 @@ function LandingPage() {
           
           {/* get started button */}
           <div className=" flex justify-center ">
-            <button className=" bg-black text-lg sm:text-xl text-slate-300 font-extrabold p-4 rounded-3xl">
+            <button className=" bg-black hover:bg-purple-600 text-lg sm:text-xl text-slate-300 font-extrabold p-4 rounded-3xl">
               Get Started
             </button>
           </div>
@@ -117,8 +117,8 @@ function LandingPage() {
         <footer className="bg-gray-900 text-gray-200 font-serif">
 
         {/* <!-- container --> */}
-        <div class="container mx-auto py-6 px-6 "> 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 ">
+        <div className="container mx-auto py-6 px-6 "> 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 ">
 {/* col 1 */}
   <div className="p-2">
     
@@ -146,9 +146,9 @@ function LandingPage() {
     adventure
   </p>
 
-  <div className="flex items-center p-2 gap-1 bg-gray-500 rounded-3xl overflow-hidden absolute w-72 h-14">
+  <div className="flex items-center p-2 gap-1 bg-gray-500 rounded-3xl overflow-hidden absolute w-72 lg:w-64 h-14">
     <input type="email" placeholder="Email address.." className="bg-transparent outline-none w-1/2" />
-    <button className="bg-slate-300 hover:bg-yellow-200 text-black outline-none  w-56 h-14 relative rounded-3xl left-7">Subscribe</button>
+    <button className="bg-slate-300 hover:bg-yellow-200 text-black outline-none  w-40 h-14 relative rounded-3xl left-7">Subscribe</button>
   </div>
 
   {/* Social links */}
@@ -193,17 +193,12 @@ function LandingPage() {
 </div>
 
 </div>
-</div>
-         
+</div>       
 <h4 className="py-4 text-center text-lg ">Cpoyright ! Made by Biswajit | Commando @2024 ! All rigts Reserved 🖕</h4>
 </footer>
-
-
-
         {/* end */}
       </div>
     </>
   );
 }
-
 export default LandingPage;
