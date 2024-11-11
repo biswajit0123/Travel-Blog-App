@@ -115,7 +115,6 @@ function LandingPage() {
         {/* footer */}
 
         <footer className="bg-gray-900 text-gray-200 font-serif">
-
         {/* <!-- container --> */}
         <div className="container mx-auto py-6 px-6 "> 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 ">
@@ -153,11 +152,11 @@ function LandingPage() {
 
   {/* Social links */}
   <div className="mt-5 flex space-x-4 items-center">
-    <a href=""><i className="fa-brands fa-facebook text-3xl"></i></a>
-    <a href=""><i className="fa-brands fa-linkedin text-3xl"></i></a>
-    <a href=""><i className="fa-brands fa-square-twitter text-3xl"></i></a>
-    <a href=""><i className="fa-brands fa-github text-3xl"></i></a>
-    <a href=""><i className="fa-brands fa-instagram text-3xl"></i></a>
+    <a href="" className=" transition ease-linear duration-100 hover:scale-125 "><i className="fa-brands fa-facebook text-3xl "></i></a>
+    <a href="" className=" transition ease-linear duration-100 hover:scale-125 "><i className="fa-brands fa-linkedin text-3xl"></i></a>
+    <a href="" className=" transition ease-linear duration-100 hover:scale-125 "><i className="fa-brands fa-square-twitter text-3xl"></i></a>
+    <a href="" className=" transition ease-linear duration-100 hover:scale-125 "><i className="fa-brands fa-github text-3xl"></i></a>
+    <a href="" className=" transition ease-linear duration-100 hover:scale-125 "><i className="fa-brands fa-instagram text-3xl"></i></a>
   </div>
 </div>
 
