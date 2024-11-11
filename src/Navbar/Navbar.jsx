@@ -12,7 +12,7 @@ function Navbar() {
     Home
   </a>
   <a href="#" class="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300">
-  Blogs
+  Blog
 </a>
 
 
@@ -20,7 +20,7 @@ function Navbar() {
     Map
   </a>
   <a href="#" class="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300">
-    Plans
+    Plan
   </a>
 
     <img src="src/Images/pf.jpg" alt="" className='w-12 h-12 rounded-full' />
