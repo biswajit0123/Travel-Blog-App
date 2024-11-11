@@ -146,7 +146,7 @@ function LandingPage() {
     adventure
   </p>
 
-  <div className="flex items-center p-2 gap-1 bg-gray-500 rounded-3xl overflow-hidden absolute w-72 lg:w-60 h-14">
+  <div className="flex items-center p-2 gap-1 bg-gray-500 rounded-3xl overflow-hidden  w-72 lg:w-60 h-14">
     <input type="email" placeholder="Email address.." className="bg-transparent outline-none w-1/2" />
     <button className="bg-slate-300 hover:bg-yellow-200 text-black outline-none  w-40 h-14 relative rounded-3xl left-7">Subscribe</button>
   </div>
