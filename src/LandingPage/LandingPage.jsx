@@ -2,15 +2,6 @@ import { NavLink } from "react-router-dom";
 import SlidingPage from "./SlidingPage";
 
 function LandingPage() {
-  const image = [
-    "3ktnbuhr.bmp",
-    "3o6vmc9n.bmp",
-    "c7qyveyt.bmp",
-    "e9f8948t.bmp",
-    "ip3rvgiq.bmp",
-    "pcmnv8i5.bmp",
-    "v9wpmf0u.bmp",
-  ];
   return (
     <>
 
