@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Login() {
   return (
-    <div className="flex min-h-screen">
+    <div className="root flex min-h-screen">
       {/* Left Side - Welcome Message */}
       <div className="flex-1 bg-gray-900 text-white  items-center justify-center p-8 flex-shrink-0 md:w-1/2 sm:hidden md:flex hidden">
         <div className=" text-wrap">
@@ -17,6 +17,7 @@ function Login() {
           </p>
         </div>
       </div>
+
 
       {/* Right Side - Login Form */}
       <div className="flex-1 bg-gray-800 flex items-center justify-center p-8">
