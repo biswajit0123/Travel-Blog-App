@@ -1,8 +1,18 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import SlidingBg from "./SlidingBg";
-
+import Corouselblock from './Coruselblock'
 function HomePage() {
+
+  const slides =[
+    "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/29368090/pexels-photo-29368090/free-photo-of-intricate-blue-room-at-jaipur-city-palace.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/29372996/pexels-photo-29372996/free-photo-of-charming-swiss-countryside-in-walenstadt.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/27855248/pexels-photo-27855248/free-photo-of-sunset-over-the-ocean-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "https://images.pexels.com/photos/29372996/pexels-photo-29372996/free-photo-of-charming-swiss-countryside-in-walenstadt.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/27855248/pexels-photo-27855248/free-photo-of-sunset-over-the-ocean-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+  ]
   return (
     <div>
       <Navbar />
@@ -12,7 +22,13 @@ function HomePage() {
       <div className=" relative z-30 text-2xl font-mono font-medium text-white flex justify-center items-center w-full h-screen">
         <h2 className=" bg-black p-3 rounded-3xl hover:bg-slate-700 hover:ring-2 hover:ring-blue-600">create post</h2>
       </div>
-      <div className=" bg-white relative">
+
+
+<Corouselblock />
+
+
+
+      {/* <div className=" bg-white relative">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
         asperiores nobis fugiat itaque blanditiis quas ad, dignissimos placeat
         nisi ex tenetur quasi est qui distinctio eveniet molestiae totam omnis
@@ -36,7 +52,10 @@ function HomePage() {
         reprehenderit iusto voluptas ex recusandae sapiente facilis. Dolor
         corporis odit perferendis, officia distinctio aliquid. Facere esse hic
         quo?
-      </div>
+      </div> */}
+
+
+
     </div>
   );
 }
