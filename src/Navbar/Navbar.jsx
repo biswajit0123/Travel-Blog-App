@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [scroll,setScroll]=useState(false)
   useEffect(()=>{
    const handleScroll=()=>{
-        if(window.scrollY>100)
+        if(window.scrollY>40)
         {
           setScroll(true)
             console.log(window.scrollY);
@@ -18,37 +19,37 @@ function Navbar() {
   return (
     <>
       {scroll &&
-        <nav className="w-full flex  justify-between items-center px-6 py-4 shadow-lg  shadow-gray-300 bg-white fixed z-50 opacity-80">
-          <h2 className="font-serif text-3xl font-bold cursor-pointer">
+        <nav className="w-full hidden  justify-between items-center px-6 py-2 shadow-sm  shadow-gray-300 bg-white fixed z-50 md:flex">
+          <h2 className="font-serif text-xl font-bold cursor-pointer">
             Lets_Explore
           </h2>
 
-          <ul className="flex gap-14 items-center text-xl font-bold">
-            <a
-              href="#"
-              className="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
+          <ul className="flex gap-14 items-center text-base font-bold">
+            <NavLink
+              to="/home"
+              className="relative font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
             >
-              Home
-            </a>
-            <a
-              href="#"
-              className="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
+              HOME
+            </NavLink>
+            <NavLink
+              to="/blogpage"
+              className="relative font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
             >
-              Blog
-            </a>
+              BLOG
+            </NavLink>
 
-            <a
-              href="#"
-              className="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
+            <NavLink
+              to="/mappage"
+              className="relative font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
             >
-              Map
-            </a>
-            <a
-              href="#"
-              className="relative text-xl font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
+              MAP
+            </NavLink>
+            <NavLink
+              to="/planspage"
+              className="relative font-semibold before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black hover:before:w-full before:transition-all before:duration-300"
             >
-              Plan
-            </a>
+              PLANS
+            </NavLink>
 
             <img
               src="src/Images/pf.jpg"

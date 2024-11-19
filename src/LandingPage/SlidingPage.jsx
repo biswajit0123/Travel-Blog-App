@@ -9,10 +9,10 @@ function SlidingPage() {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
   return (
-    <div className="feedContainer w-full h-min overflow-hidden flex ">
+    <div className="feedContainer w-full h-min overflow-hidden flex bg-red-600 ">
       {/* Scrollable Content */}
-      <div className="rum feedContainer flex space-x-8 min-w-fit ">
-        <div className="w-64 h-[21em] bg-black rounded-3xl overflow-hidden relative ring-2 ring-white">
+      <div className="rum feedContainer flex space-x-8 min-w-fit transition duration-[32000] transform">
+        <div className=" w-64 h-[21em] bg-black rounded-3xl overflow-hidden relative ring-2 ring-white">
           <img
             src="src/Images/3ktnbuhr.bmp"
             alt=""
@@ -133,9 +133,11 @@ function SlidingPage() {
           </div>
         </div>
       </div>
-{/* Second  */}
+      {/* Second  */}
 
-      <div className="rum feedContainer flex space-x-8 min-w-fit ml-4 ">
+
+
+      <div className="rum feedContainer flex space-x-8 min-w-fit ml-8">
         <div className="w-64 h-[21em] bg-black rounded-3xl overflow-hidden relative ring-2 ring-white">
           <img
             src="src/Images/3ktnbuhr.bmp"

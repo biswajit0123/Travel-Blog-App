@@ -9,9 +9,12 @@
         transform: translateX(-100%);
     }
 }
-.rum{
+/* .rum{
     animation:32s slide infinite linear;
-}
+} */
+/* .feedContainer:hover{
+    animation-play-state: paused;
+} */
 .sticky-element {
     position: sticky;
     top: 0; /* Adjust this value for when the element should "stick" */
