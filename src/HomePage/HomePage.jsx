@@ -1,140 +1,62 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../Navbar/Navbar";
 import SlidingBg from "./SlidingBg";
-import { NavLink } from "react-router-dom";
-import HomeNav from "./HomeNav";
-import SlidingPage from "../LandingPage/SlidingPage";
-
+import Corouselblock from './Coruselblock'
 function HomePage() {
-  const [visibility, setVisibility] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisibility(true);
-    }, 1000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+
+  const slides =[
+    "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/29368090/pexels-photo-29368090/free-photo-of-intricate-blue-room-at-jaipur-city-palace.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/29372996/pexels-photo-29372996/free-photo-of-charming-swiss-countryside-in-walenstadt.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/27855248/pexels-photo-27855248/free-photo-of-sunset-over-the-ocean-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "https://images.pexels.com/photos/29372996/pexels-photo-29372996/free-photo-of-charming-swiss-countryside-in-walenstadt.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/27855248/pexels-photo-27855248/free-photo-of-sunset-over-the-ocean-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+  ]
   return (
-    <div className="overflow-hidden p-0 m-0 flex flex-col">
+    <div>
       <Navbar />
       <SlidingBg />
-      {/* Middle Section */}
-      {/* homeNavv */}
-      <HomeNav/>
-      <div
-        className={` relative z-30 text-2xl font-mono font-medium text-white flex flex-col gap-8 justify-center items-center w-full h-screen transition duration-1000 transform ${
-          visibility ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-      >
-        <h1 className=" text-4xl font-extrabold font-serif ">WANDERLUST</h1>
-        <div className=" mx-10 md:mx-20 lg:mx-60 text-base text-slate-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          illum nihil quasi cum repudiandae velit, aperiam nesciunt libero
-          voluptate cupiditate iste quas ullam. Fugit incidunt deleniti est
-          eveniet obcaecati tempore.
-        </div>
-        <h2 className=" font-bold bg-black p-3 rounded-3xl hover:bg-slate-700 hover:ring-2 hover:ring-blue-600">
-          create post
-        </h2>
+      {/* middle section  */}
+      <div className=" absolute w-full h-screen bg-black opacity-45"></div>
+      <div className=" relative z-30 text-2xl font-mono font-medium text-white flex justify-center items-center w-full h-screen">
+        <h2 className=" bg-black p-3 rounded-3xl hover:bg-slate-700 hover:ring-2 hover:ring-blue-600">create post</h2>
       </div>
-      <div className=" -mt-48 max-h-min md:h-[412px] ">
-            <SlidingPage />
-          </div>
 
-      <div className=" relative flex justify-center items-center flex-col gap-7 md:gap-10 w-full h-[35rem] md:h-[22rem] bg-purple-300">
 
-        {/* app logos */}
-          <div
-            className={` flex flex-row gap-12 md:gap-20 transition duration-500 transform ${
-              visibility
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div>
-              <img
-                src="src/Logos/16033372.png"
-                alt=""
-                className=" w-10 h-10 transition ease-linear duration-100 hover:scale-125"
-              />
-            </div>
-            <div>
-              <img
-                src="src/Logos/1384046.png"
-                alt=""
-                className=" w-10 h-10 transition ease-linear duration-100 hover:scale-125"
-              />
-            </div>
-            <div>
-              <img
-                src="src/Logos/5968915.png"
-                alt=""
-                className=" w-10 h-10 transition ease-linear duration-100 hover:scale-125"
-              />
-            </div>
-            <div>
-              <img
-                src="src/Logos/1384037.png"
-                alt=""
-                className=" w-10 h-10 transition ease-linear duration-100 hover:scale-125"
-              />
-            </div>
-          </div>
-          <div
-            className={` text-center text-xm md:text-xl font-serif mx-10 flex justify-center flex-col transition duration-500 transform ${
-              visibility
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-10"
-            }`}
-          >
-            <h1 className="mx-auto">PRIVACY POLICY | TERMS OF USE</h1>
-            <h1 className="mx-auto">
-              YOUR INDIA PRIVACY RIGHTS | CHILDREN'S ONLINE PRIVACY POLICY
-            </h1>
-            <h1 className="mx-auto">
-              INTEREST BASED ADS | DO NOT SELL MY INFO
-            </h1>
-          </div>
-        </div>
-        <div className="  gap-7 md:gap-10 mt-5 w-full h-[35rem] md:h-[28rem]">
-          <div
-            className={`flex justify-center items-center flex-col gap-7 bg-transparent text-white transition duration-500 transform ${
-              visibility
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="">
-              <img
-                src="src/Images/tnpie5hk.bmp"
-                alt=""
-                className=" rounded-full w-[80px] h-[80px] mx-auto ring-white ring-2"
-              />
-              <h1 className="text-3xl font-bold">LET'S TALK</h1>
-            </div>
-            <div className=" text-xl font-sans mx-10 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              doloremque neque, rem corporis laboriosam mollitia aspernatur
-              beatae delectus consectetur dolores alias veniam necessitatibus
-              illo tempore voluptates ab minus, soluta fugiat. Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Mollitia quam eum corrupti
-              illum. Placeat voluptas doloribus consequuntur iure quos. Facere
-              autem modi natus numquam quibusdam. Excepturi quod necessitatibus
-              magnam voluptatibus.
-            </div>
-            <div className=" flex flex-row gap-12 md:gap-40 text-xl">
-              <div>Email</div>
-              <div>contact</div>
-              <div>instagram</div>
-            </div>
-            <button className=" text-lg text-black bg-slate-300 rounded-xl w-44 h-11 ring-2 ring-white hover:bg-slate-400 ">
-              Book Now
-            </button>
-          </div>
-        </div>
+<Corouselblock />
+
+
+
+      {/* <div className=" bg-white relative">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        asperiores nobis fugiat itaque blanditiis quas ad, dignissimos placeat
+        nisi ex tenetur quasi est qui distinctio eveniet molestiae totam omnis
+        officiis nulla voluptatem perferendis architecto ratione hic. Qui
+        laborum dignissimos adipisci necessitatibus voluptatibus hic molestiae,
+        id iste ipsam at eaque illum dolores odio vero. Nesciunt omnis
+        cupiditate atque in autem ex tempore exercitationem, explicabo unde vel
+        hic laboriosam sint qui! Officiis magni, quas ipsam quibusdam sit ab ea
+        nemo blanditiis. Neque nihil quaerat cupiditate molestias quam iure
+        aspernatur a tenetur nostrum commodi. A asperiores minus deserunt,
+        aliquid hic porro similique soluta nobis quisquam tempora veritatis
+        atque recusandae. Laboriosam, exercitationem excepturi impedit maxime
+        atque neque magnam mollitia architecto harum dicta, eligendi incidunt
+        aut voluptatibus distinctio, optio dignissimos voluptatum in. Esse,
+        suscipit maiores dicta quidem praesentium debitis dignissimos, quam fuga
+        nihil animi in assumenda magnam facere placeat dolorum exercitationem
+        neque excepturi quibusdam quo enim. Quisquam officiis laborum cum id
+        praesentium eligendi omnis distinctio quia aut nisi minus, a labore,
+        accusantium sequi. Doloremque voluptate blanditiis, cumque temporibus
+        labore repellendus repellat delectus mollitia eaque vitae iste eum
+        reprehenderit iusto voluptas ex recusandae sapiente facilis. Dolor
+        corporis odit perferendis, officia distinctio aliquid. Facere esse hic
+        quo?
+      </div> */}
+
+
+
     </div>
-
   );
 }
 
